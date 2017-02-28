@@ -1,0 +1,176 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\nDatasets use with this tutorial\n---\n",
+      "user": "anonymous",
+      "dateUpdated": "Feb 28, 2017 9:05:21 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eDatasets use with this tutorial\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488309881072_-678258458",
+      "id": "20170228-202441_2056011249",
+      "dateCreated": "Feb 28, 2017 8:24:41 PM",
+      "dateStarted": "Feb 28, 2017 9:05:21 PM",
+      "dateFinished": "Feb 28, 2017 9:05:24 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh \nls -lt /Users/juantomas/proyectos/cursos/curso-spark/datasets\n\n",
+      "user": "anonymous",
+      "dateUpdated": "Feb 28, 2017 10:13:28 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "total 1347920\n-rw-r--r--@ 1 juantomas  staff  689413344 28 feb 22:07 2008.csv\n-rw-r--r--@ 1 juantomas  staff     244438 28 feb 22:07 airports.csv\n-rw-r--r--@ 1 juantomas  staff      43758 28 feb 22:07 carriers.csv\n-rw-r--r--@ 1 juantomas  staff     428796 28 feb 22:07 plane-data.csv\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488311797987_-595394070",
+      "id": "20170228-205637_1262468898",
+      "dateCreated": "Feb 28, 2017 8:56:37 PM",
+      "dateStarted": "Feb 28, 2017 10:13:28 PM",
+      "dateFinished": "Feb 28, 2017 10:13:28 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\nUSA Flights 2008 \n\nhttp://stat-computing.org/dataexpo/2009/2008.csv.bz2\n\n\n",
+      "user": "anonymous",
+      "dateUpdated": "Feb 28, 2017 10:13:18 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eUSA Flights 2008 \u003c/p\u003e\n\u003cp\u003e\u003ca href\u003d\"http://stat-computing.org/dataexpo/2009/2008.csv.bz2\"\u003ehttp://stat-computing.org/dataexpo/2009/2008.csv.bz2\u003c/a\u003e\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488316346559_615287004",
+      "id": "20170228-221226_181477098",
+      "dateCreated": "Feb 28, 2017 10:12:26 PM",
+      "dateStarted": "Feb 28, 2017 10:13:18 PM",
+      "dateFinished": "Feb 28, 2017 10:13:22 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val baby_names \u003d sqlContext.read.format(\"com.databricks.spark.csv\").option(\"header\", \"true\").option(\"inferSchema\", \"true\").load(\"baby_names.csv\")\n",
+      "user": "anonymous",
+      "dateUpdated": "Feb 28, 2017 8:25:38 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\n\n\n\n\n\n\n\n\n\n\n\norg.apache.spark.sql.AnalysisException: Path does not exist: file:/Users/juantomas/Downloads/zeppelin-0.7.0-bin-all/baby_names.csv;\n  at org.apache.spark.sql.execution.datasources.DataSource$$anonfun$14.apply(DataSource.scala:382)\n  at org.apache.spark.sql.execution.datasources.DataSource$$anonfun$14.apply(DataSource.scala:370)\n  at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)\n  at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)\n  at scala.collection.immutable.List.foreach(List.scala:381)\n  at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:241)\n  at scala.collection.immutable.List.flatMap(List.scala:344)\n  at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:370)\n  at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:152)\n  at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:135)\n  ... 47 elided\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488309788667_679951132",
+      "id": "20170228-202308_1487435516",
+      "dateCreated": "Feb 28, 2017 8:23:08 PM",
+      "dateStarted": "Feb 28, 2017 8:24:41 PM",
+      "dateFinished": "Feb 28, 2017 8:25:48 PM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "/CursoAmadeus2017/SparkSQL",
+  "id": "2CCTD7RNN",
+  "angularObjects": {
+    "2CC52E4S5:shared_process": [],
+    "2C9N1T5Y3:shared_process": [],
+    "2CAZ8JZD9:shared_process": [],
+    "2CCZDGC3H:shared_process": [],
+    "2C9S66NQK:shared_process": [],
+    "2C94SRCMC:shared_process": [],
+    "2CCCN7GZD:shared_process": [],
+    "2CCGRTB7B:shared_process": [],
+    "2CC8YMXCQ:shared_process": [],
+    "2CC6XAQM3:shared_process": [],
+    "2C9731R8U:shared_process": [],
+    "2CBZVGS5S:shared_process": [],
+    "2CBDXBFEU:shared_process": [],
+    "2CB3WM78Y:shared_process": [],
+    "2CCN2DPHQ:shared_process": [],
+    "2C9GE2AUU:shared_process": [],
+    "2CCV4F9FS:shared_process": [],
+    "2CCHNGUC9:shared_process": [],
+    "2C9RQJYPD:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}
