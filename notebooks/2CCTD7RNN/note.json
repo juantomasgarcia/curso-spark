@@ -113,18 +113,18 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%md\n\nFirst Example\n---\n\n**Step by Step**: we will start just loading a csv file.",
+      "text": "%md\n\nFirst Example (for the impacients)\n---\n\n**Step by Step**: we will start just loading a csv file.",
       "user": "anonymous",
-      "dateUpdated": "Feb 28, 2017 10:52:24 PM",
+      "dateUpdated": "Feb 28, 2017 11:30:42 PM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
-          "language": "scala",
+          "language": "markdown",
           "editOnDblClick": true
         },
-        "editorMode": "ace/mode/scala",
+        "editorMode": "ace/mode/markdown",
         "editorHide": false,
         "tableHide": true
       },
@@ -410,9 +410,9 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%md \n\nSo what is Spark SQL? \n---\n\n\n* At the very start was a derivate of HIVE SQL \n* Spark SQL is a Spark library that runs on top of Spark\n* It provides a higher-level abstraction than the Spark core API for processing structured data\n* Structured data includes data stored in a database, NoSQL data store, Parquet, ORC, Avro, JSON, CSV, or any other structured format\n* ",
+      "text": "%md \n\nSo what is Spark SQL? \n---\n\n\n* At the very start was a derivate of HIVEQL \n* Spark SQL is a Spark library that runs on top of Spark\n* It provides a higher-level abstraction than the Spark core API for processing structured data\n* Structured data includes data stored in a database, NoSQL data store, Parquet, ORC, Avro, JSON, CSV, or any other structured format\n* The NoSQL data stores that can be used with Spark SQL include HBase, Cassandra, Elasticsearch, Druid, and other NoSQL data stores\n* Spark SQL is more than just about providing SQL interface to Spark\n* Spark SQL can be used as a library for developing data processing applications in Scala, Java, Python, or R\n* internally uses the Spark core API to execute queries on a Spark cluster\n* Spark SQL seamlessly integrates with other Spark libraries such as Spark Streaming, Spark ML, and GraphX\n\n",
       "user": "anonymous",
-      "dateUpdated": "Feb 28, 2017 10:55:42 PM",
+      "dateUpdated": "Feb 28, 2017 11:37:54 PM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
@@ -422,8 +422,8 @@
           "editOnDblClick": true
         },
         "editorMode": "ace/mode/markdown",
-        "editorHide": false,
-        "tableHide": true
+        "editorHide": true,
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -434,7 +434,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eSo what is Spark SQL?\u003c/h2\u003e\n\u003cul\u003e\n  \u003cli\u003eAt the very start was a derivate of HIVE SQL\u003c/li\u003e\n  \u003cli\u003eSpark SQL is a Spark library that runs on top of Spark\u003c/li\u003e\n  \u003cli\u003eIt provides a higher-level abstraction than the Spark core API for processing structured data\u003c/li\u003e\n  \u003cli\u003eStructured data includes data stored in a database, NoSQL data store, Parquet, ORC, Avro, JSON, CSV, or any other structured format\u003cbr/\u003e*\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eSo what is Spark SQL?\u003c/h2\u003e\n\u003cul\u003e\n  \u003cli\u003eAt the very start was a derivate of HIVEQL\u003c/li\u003e\n  \u003cli\u003eSpark SQL is a Spark library that runs on top of Spark\u003c/li\u003e\n  \u003cli\u003eIt provides a higher-level abstraction than the Spark core API for processing structured data\u003c/li\u003e\n  \u003cli\u003eStructured data includes data stored in a database, NoSQL data store, Parquet, ORC, Avro, JSON, CSV, or any other structured format\u003c/li\u003e\n  \u003cli\u003eThe NoSQL data stores that can be used with Spark SQL include HBase, Cassandra, Elasticsearch, Druid, and other NoSQL data stores\u003c/li\u003e\n  \u003cli\u003eSpark SQL is more than just about providing SQL interface to Spark\u003c/li\u003e\n  \u003cli\u003eSpark SQL can be used as a library for developing data processing applications in Scala, Java, Python, or R\u003c/li\u003e\n  \u003cli\u003einternally uses the Spark core API to execute queries on a Spark cluster\u003c/li\u003e\n  \u003cli\u003eSpark SQL seamlessly integrates with other Spark libraries such as Spark Streaming, Spark ML, and GraphX\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
           }
         ]
       },
@@ -442,24 +442,354 @@
       "jobName": "paragraph_1488318155881_277638337",
       "id": "20170228-224235_216639834",
       "dateCreated": "Feb 28, 2017 10:42:35 PM",
-      "dateStarted": "Feb 28, 2017 10:55:37 PM",
-      "dateFinished": "Feb 28, 2017 10:55:37 PM",
+      "dateStarted": "Feb 28, 2017 11:37:54 PM",
+      "dateFinished": "Feb 28, 2017 11:37:54 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\nThat\u0027s the global view of spark \u0026 spark SQL \n---\n\n![alternate text](https://www.safaribooksonline.com/library/view/big-data-analytics/9781484209646/images/9781484209653_Fig07-01.jpg)\n\n",
+      "user": "anonymous",
+      "dateUpdated": "Feb 28, 2017 11:55:40 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eThat\u0026rsquo;s the global view of spark \u0026amp; spark SQL\u003c/h2\u003e\n\u003cp\u003e\u003cimg src\u003d\"https://www.safaribooksonline.com/library/view/big-data-analytics/9781484209646/images/9781484209653_Fig07-01.jpg\" alt\u003d\"alternate text\" /\u003e\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488318804163_-1162528226",
+      "id": "20170228-225324_353156368",
+      "dateCreated": "Feb 28, 2017 10:53:24 PM",
+      "dateStarted": "Feb 28, 2017 11:55:40 PM",
+      "dateFinished": "Feb 28, 2017 11:55:40 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md \n\nKeypoints of Spark SQL \n---\n\n**Performance**\n\n\n*TL;DR*: Spark SQL makes data processing applications run faster using a combination of techniques, including reduced disk I/O, in-memory columnar caching, query optimization, and code generation.\n\n\n* Reduced Disk I/O\n    * Disk I/O is slow\n    * can skip non-required partitions, rows, or columns while reading data.\n\n* Partitioning\n    * a lot of I/O can be avoided by partitioning a dataset\n    \n* Columnar Storage\n    * Spark SQL supports columnar storage formats such as Parquet, which allow reading of only the columns that are used in a query\n\n* In-Memory Columnar Caching\n    * Spark SQL allows an application to cache data in an in-memory columnar format from any data source\n    * Spark SQL, caches only the required columns\n    * Spark SQL compresses the cached columns to minimize memory usage and JVM garbage collection pressure\n    * apply efficient compression techniques such as run length encoding, delta encoding, and dictionary encoding\n    \n* Skip Rows\n    * If a data source maintains statistical information about a dataset, Spark SQL takes advantage of it\n    * Serialization formats such as Parquet and ORC store min and max values for each column in a row group or chunk of rows\n\n* Predicate Pushdown\n    * Instead of reading an entire table and then executing a filtering operation, Spark SQL will ask the database to natively execute the filtering operation\n    * Since databases generally index data, native filtering is much faster than filtering at the application layer\n    \n* Query Optimization\n    * analysis\n    * logical optimization\n    * physical planning\n    * code generation\n\n* Applications \n    * Spark SQL can be used as a ETL\n    * Very fast conversions between formats.\n    * Few lines of code.\n    * You can even perform join operations across different data sources.\n\n* Distributed JDBC/ODBC SQL Query Engine\n    * can be used as a library. In this mode, data processing tasks can be expressed as SQL, HiveQL or language integrated queries within a Scala, Java, Python, or R application\n    * It comes prepackaged with a Thrift/JDBC/ODBC server\n    \n* Data Warehousing\n    * Spark SQL store and analyze large amounts of data like a warehouse\n    * Spark SQL-based data warehousing solution is more scalable, economical, and flexible than the proprietary data warehousing solutions\n    * is flexible since it supports both schema-on-read and schema-on-write",
+      "user": "anonymous",
+      "dateUpdated": "Mar 1, 2017 12:18:31 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eKeypoints of Spark SQL\u003c/h2\u003e\n\u003cp\u003e\u003cstrong\u003ePerformance\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eTL;DR\u003c/em\u003e: Spark SQL makes data processing applications run faster using a combination of techniques, including reduced disk I/O, in-memory columnar caching, query optimization, and code generation.\u003c/p\u003e\n\u003cul\u003e\n  \u003cli\u003e\n    \u003cp\u003eReduced Disk I/O\u003c/p\u003e\n    \u003cul\u003e\n      \u003cli\u003eDisk I/O is slow\u003c/li\u003e\n      \u003cli\u003ecan skip non-required partitions, rows, or columns while reading data.\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003ePartitioning\u003c/p\u003e\n    \u003cul\u003e\n      \u003cli\u003ea lot of I/O can be avoided by partitioning a dataset\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003eColumnar Storage\u003c/p\u003e\n    \u003cul\u003e\n      \u003cli\u003eSpark SQL supports columnar storage formats such as Parquet, which allow reading of only the columns that are used in a query\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003eIn-Memory Columnar Caching\u003c/p\u003e\n    \u003cul\u003e\n      \u003cli\u003eSpark SQL allows an application to cache data in an in-memory columnar format from any data source\u003c/li\u003e\n      \u003cli\u003eSpark SQL, caches only the required columns\u003c/li\u003e\n      \u003cli\u003eSpark SQL compresses the cached columns to minimize memory usage and JVM garbage collection pressure\u003c/li\u003e\n      \u003cli\u003eapply efficient compression techniques such as run length encoding, delta encoding, and dictionary encoding\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003eSkip Rows\u003c/p\u003e\n    \u003cul\u003e\n      \u003cli\u003eIf a data source maintains statistical information about a dataset, Spark SQL takes advantage of it\u003c/li\u003e\n      \u003cli\u003eSerialization formats such as Parquet and ORC store min and max values for each column in a row group or chunk of rows\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003ePredicate Pushdown\u003c/p\u003e\n    \u003cul\u003e\n      \u003cli\u003eInstead of reading an entire table and then executing a filtering operation, Spark SQL will ask the database to natively execute the filtering operation\u003c/li\u003e\n      \u003cli\u003eSince databases generally index data, native filtering is much faster than filtering at the application layer\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003eQuery Optimization\u003c/p\u003e\n    \u003cul\u003e\n      \u003cli\u003eanalysis\u003c/li\u003e\n      \u003cli\u003elogical optimization\u003c/li\u003e\n      \u003cli\u003ephysical planning\u003c/li\u003e\n      \u003cli\u003ecode generation\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003eApplications \u003c/p\u003e\n    \u003cul\u003e\n      \u003cli\u003eSpark SQL can be used as a ETL\u003c/li\u003e\n      \u003cli\u003eVery fast conversions between formats.\u003c/li\u003e\n      \u003cli\u003eFew lines of code.\u003c/li\u003e\n      \u003cli\u003eYou can even perform join operations across different data sources.\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003eDistributed JDBC/ODBC SQL Query Engine\u003c/p\u003e\n    \u003cul\u003e\n      \u003cli\u003ecan be used as a library. In this mode, data processing tasks can be expressed as SQL, HiveQL or language integrated queries within a Scala, Java, Python, or R application\u003c/li\u003e\n      \u003cli\u003eIt comes prepackaged with a Thrift/JDBC/ODBC server\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003eData Warehousing\u003c/p\u003e\n    \u003cul\u003e\n      \u003cli\u003eSpark SQL store and analyze large amounts of data like a warehouse\u003c/li\u003e\n      \u003cli\u003eSpark SQL-based data warehousing solution is more scalable, economical, and flexible than the proprietary data warehousing solutions\u003c/li\u003e\n      \u003cli\u003eis flexible since it supports both schema-on-read and schema-on-write\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488321602101_-1180240952",
+      "id": "20170228-234002_1917995362",
+      "dateCreated": "Feb 28, 2017 11:40:02 PM",
+      "dateStarted": "Mar 1, 2017 12:18:31 AM",
+      "dateFinished": "Mar 1, 2017 12:18:31 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\nApplication Programming Interface (API)\n---\n\nThe Spark SQL API consists of three key abstractions: \n\n* SQLContext\n* HiveContext \n* DataFrame. \n\nA Spark SQL application processes data using these abstractions.\n\n",
+      "user": "anonymous",
+      "dateUpdated": "Mar 1, 2017 12:20:32 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eApplication Programming Interface (API)\u003c/h2\u003e\n\u003cp\u003eThe Spark SQL API consists of three key abstractions: \u003c/p\u003e\n\u003cul\u003e\n  \u003cli\u003eSQLContext\u003c/li\u003e\n  \u003cli\u003eHiveContext\u003c/li\u003e\n  \u003cli\u003eDataFrame.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eA Spark SQL application processes data using these abstractions.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488321850550_-605473712",
+      "id": "20170228-234410_1366267029",
+      "dateCreated": "Feb 28, 2017 11:44:10 PM",
+      "dateStarted": "Mar 1, 2017 12:20:32 AM",
+      "dateFinished": "Mar 1, 2017 12:20:33 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\nSQLContext \n---\n\nSQLContext is the main entry point into the Spark SQL library.\n\nIt is a class defined in the Spark SQL library.\n\nA Spark SQL application must create an instance of the SQLContext or HiveContext class.\n\n**How create it**\n\n~~~\nimport org.apache.spark._\nimport org.apache.spark.sql._\n\nval config \u003d new SparkConf().setAppName(\"My Spark SQL app\")\nval sc \u003d new SparkContext(config)\nval sqlContext \u003d new SQLContext(sc)\n\nval resultSet \u003d sqlContext.sql(\"SELECT count(1) FROM my_table\")\n~~~",
+      "user": "anonymous",
+      "dateUpdated": "Mar 1, 2017 12:30:32 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "tableHide": false,
+        "editorHide": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eSQLContext\u003c/h2\u003e\n\u003cp\u003eSQLContext is the main entry point into the Spark SQL library.\u003c/p\u003e\n\u003cp\u003eIt is a class defined in the Spark SQL library.\u003c/p\u003e\n\u003cp\u003eA Spark SQL application must create an instance of the SQLContext or HiveContext class.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eHow create it\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eimport org.apache.spark._\nimport org.apache.spark.sql._\n\nval config \u003d new SparkConf().setAppName(\u0026quot;My Spark SQL app\u0026quot;)\nval sc \u003d new SparkContext(config)\nval sqlContext \u003d new SQLContext(sc)\n\nval resultSet \u003d sqlContext.sql(\u0026quot;SELECT count(1) FROM my_table\u0026quot;)\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488324031777_1893317446",
+      "id": "20170301-002031_1597575652",
+      "dateCreated": "Mar 1, 2017 12:20:31 AM",
+      "dateStarted": "Mar 1, 2017 12:30:26 AM",
+      "dateFinished": "Mar 1, 2017 12:30:26 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark \n\nsc \nsqlContext\n\n\n\n",
+      "user": "anonymous",
+      "dateUpdated": "Mar 1, 2017 12:25:02 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nres11: org.apache.spark.SparkContext \u003d org.apache.spark.SparkContext@3a63e394\n\nres12: org.apache.spark.sql.SQLContext \u003d org.apache.spark.sql.SQLContext@472983b3\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488324247517_-1005305790",
+      "id": "20170301-002407_1426558498",
+      "dateCreated": "Mar 1, 2017 12:24:07 AM",
+      "dateStarted": "Mar 1, 2017 12:25:03 AM",
+      "dateFinished": "Mar 1, 2017 12:25:09 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\nDataFrames\n---\n\n* DataFrame is Spark SQL’s primary data abstraction\n* a distributed collection of rows organized into named columns.\n* inspired by DataFrames in R and Python\n* similar to a table in a relational database\n\n\n\n",
+      "user": "anonymous",
+      "dateUpdated": "Mar 1, 2017 12:33:13 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eDataFrames\u003c/h2\u003e\n\u003cul\u003e\n  \u003cli\u003eDataFrame is Spark SQL’s primary data abstraction\u003c/li\u003e\n  \u003cli\u003ea distributed collection of rows organized into named columns.\u003c/li\u003e\n  \u003cli\u003einspired by DataFrames in R and Python\u003c/li\u003e\n  \u003cli\u003esimilar to a table in a relational database\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488324302565_688651672",
+      "id": "20170301-002502_1565229103",
+      "dateCreated": "Mar 1, 2017 12:25:02 AM",
+      "dateStarted": "Mar 1, 2017 12:33:13 AM",
+      "dateFinished": "Mar 1, 2017 12:33:13 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\nDiffs between RDDs \u0026 Dataframes\n---\n\n* DataFrame is schema aware\n* RDD is a partitioned collection of opaque elements\n* DataFrame knows the names and types of the columns in a dataset\n* DataFrame class is able to provide a rich domain-specific-language (DSL) for data processing\n* DataFrame API is easier to understand and use than the RDD API\n* DataFrame can also be operated on as an RDD\n* RDD can be easily created from a DataFrame\n* DataFrame can be registered as a temporary table\n\n\n",
+      "user": "anonymous",
+      "dateUpdated": "Mar 1, 2017 12:37:22 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eDiffs between RDDs \u0026amp; Dataframes\u003c/h2\u003e\n\u003cul\u003e\n  \u003cli\u003eDataFrame is schema aware\u003c/li\u003e\n  \u003cli\u003eRDD is a partitioned collection of opaque elements\u003c/li\u003e\n  \u003cli\u003eDataFrame knows the names and types of the columns in a dataset\u003c/li\u003e\n  \u003cli\u003eDataFrame class is able to provide a rich domain-specific-language (DSL) for data processing\u003c/li\u003e\n  \u003cli\u003eDataFrame API is easier to understand and use than the RDD API\u003c/li\u003e\n  \u003cli\u003eDataFrame can also be operated on as an RDD\u003c/li\u003e\n  \u003cli\u003eRDD can be easily created from a DataFrame\u003c/li\u003e\n  \u003cli\u003eDataFrame can be registered as a temporary table\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488324777727_-1194054392",
+      "id": "20170301-003257_151015170",
+      "dateCreated": "Mar 1, 2017 12:32:57 AM",
+      "dateStarted": "Mar 1, 2017 12:37:23 AM",
+      "dateFinished": "Mar 1, 2017 12:37:23 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\nRow\n---\n\nRow is a Spark SQL abstraction for representing a row of data\n\nit is equivalent to a relational tuple or row in a table\n\nYou can create a Row this way: \n\n~~~\nimport org.apache.spark.sql._\n\nval row1 \u003d Row(\"Barack Obama\", \"President\", \"United States\")\nval row2 \u003d Row(\"David Cameron\", \"Prime Minister\", \"United Kingdom\")\n~~~\n\nand you can use this rows at low level: \n\n~~~\nval presidentName \u003d row1.getString(0)\nval country \u003d row1.getString(2)\n~~~",
+      "user": "anonymous",
+      "dateUpdated": "Mar 1, 2017 12:40:07 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eRow\u003c/h2\u003e\n\u003cp\u003eRow is a Spark SQL abstraction for representing a row of data\u003c/p\u003e\n\u003cp\u003eit is equivalent to a relational tuple or row in a table\u003c/p\u003e\n\u003cp\u003eYou can create a Row this way: \u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eimport org.apache.spark.sql._\n\nval row1 \u003d Row(\u0026quot;Barack Obama\u0026quot;, \u0026quot;President\u0026quot;, \u0026quot;United States\u0026quot;)\nval row2 \u003d Row(\u0026quot;David Cameron\u0026quot;, \u0026quot;Prime Minister\u0026quot;, \u0026quot;United Kingdom\u0026quot;)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eand you can use this rows at low level: \u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eval presidentName \u003d row1.getString(0)\nval country \u003d row1.getString(2)\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488325042529_1230631532",
+      "id": "20170301-003722_1470503227",
+      "dateCreated": "Mar 1, 2017 12:37:22 AM",
+      "dateStarted": "Mar 1, 2017 12:40:07 AM",
+      "dateFinished": "Mar 1, 2017 12:40:07 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\nHow to create a Dataframe: \n---\n\n**a) from an RDD** \n\n~~~\nimport org.apache.spark._\nimport org.apache.spark.sql._\n\nval config \u003d new SparkConf().setAppName(\"My Spark SQL app\")\nval sc \u003d new SparkContext(config)\nval sqlContext \u003d new SQLContext(sc)\nimport sqlContext.implicits._\n\ncase class Employee(name: String, age: Int, gender: String)\n\nval rowsRDD \u003d sc.textFile(\"path/to/employees.csv\")\nval employeesRDD \u003d rowsRDD.map{row \u003d\u003e row.split(\",\")}\n                          .map{cols \u003d\u003e Employee(cols(0), cols(1).trim.toInt, cols(2))}\n\nval employeesDF \u003d employeesRDD.toDF()\n\n~~~\n\n**b) createDataFrame**\n\n~~~\nimport org.apache.spark._\nimport org.apache.spark.sql._\nimport org.apache.spark.sql.types._\n\nval config \u003d new SparkConf().setAppName(\"My Spark SQL app\")\nval sc \u003d new SparkContext(config)\nval sqlContext \u003d new SQLContext(sc)\n\nval linesRDD \u003d sc.textFile(\"path/to/employees.csv\")\nval rowsRDD \u003d linesRDD.map{row \u003d\u003e row.split(\",\")}\n                      .map{cols \u003d\u003e Row(cols(0), cols(1).trim.toInt, cols(2))}\n\nval schema \u003d StructType(List(\n                 StructField(\"name\", StringType, false),\n                 StructField(\"age\", IntegerType, false),\n                 StructField(\"gender\", StringType, false)\n               )\n             )\n\nval employeesDF \u003d sqlContext.createDataFrame(rowsRDD,schema)\n~~~\n\n**c) Creating a DataFrame from a Data Source**\n\nSpark SQL provides a unified interface for creating a DataFrame from a variety of data sources.\n\nAPI can be used to create a DataFrame from a MySQL, PostgreSQL, Oracle, or Cassandra table.\n\nthe same API can be used to create a DataFrame from a Parquet, JSON, ORC or CSV file on local file system, HDFS or S3\n\nSpark SQL has built-in support for some of the commonly used data sources\n\nIncludes Parquet, JSON, Hive, and JDBC-compliant databases\n\nExternal packages are available for other data sources\n\n~~~\nimport org.apache.spark._\nimport org.apache.spark.sql._\n\nval config \u003d new SparkConf().setAppName(\"My Spark SQL app\")\nval sc \u003d new SparkContext(config)\nval sqlContext \u003d new org.apache.spark.sql.hive.HiveContext (sc)\n\n// create a DataFrame from parquet files\nval parquetDF \u003d sqlContext.read\n                          .format(\"org.apache.spark.sql.parquet\")\n                          .load(\"path/to/Parquet-file-or-directory\")\n\n// create a DataFrame from JSON files\nval jsonDF \u003d sqlContext.read\n                       .format(\"org.apache.spark.sql.json\")\n                       .load(\"path/to/JSON-file-or-directory\")\n\n// create a DataFrame from a table in a Postgres database\nval jdbcDF \u003d sqlContext.read\n               .format(\"org.apache.spark.sql.jdbc\")\n               .options(Map(\n                  \"url\" -\u003e \"jdbc:postgresql://host:port/database?user\u003d\u003cUSER\u003e\u0026password\u003d\u003cPASS\u003e\",\n                  \"dbtable\" -\u003e \"schema-name.table-name\"))\n               .load()\n\n// create a DataFrame from a Hive table\nval hiveDF \u003d sqlContext.read\n                       .table(\"hive-table-name\")\n~~~\n\n",
+      "user": "anonymous",
+      "dateUpdated": "Mar 1, 2017 12:50:51 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eHow to create a Dataframe:\u003c/h2\u003e\n\u003cp\u003e\u003cstrong\u003ea) from an RDD\u003c/strong\u003e \u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eimport org.apache.spark._\nimport org.apache.spark.sql._\n\nval config \u003d new SparkConf().setAppName(\u0026quot;My Spark SQL app\u0026quot;)\nval sc \u003d new SparkContext(config)\nval sqlContext \u003d new SQLContext(sc)\nimport sqlContext.implicits._\n\ncase class Employee(name: String, age: Int, gender: String)\n\nval rowsRDD \u003d sc.textFile(\u0026quot;path/to/employees.csv\u0026quot;)\nval employeesRDD \u003d rowsRDD.map{row \u003d\u0026gt; row.split(\u0026quot;,\u0026quot;)}\n                          .map{cols \u003d\u0026gt; Employee(cols(0), cols(1).trim.toInt, cols(2))}\n\nval employeesDF \u003d employeesRDD.toDF()\n\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eb) createDataFrame\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eimport org.apache.spark._\nimport org.apache.spark.sql._\nimport org.apache.spark.sql.types._\n\nval config \u003d new SparkConf().setAppName(\u0026quot;My Spark SQL app\u0026quot;)\nval sc \u003d new SparkContext(config)\nval sqlContext \u003d new SQLContext(sc)\n\nval linesRDD \u003d sc.textFile(\u0026quot;path/to/employees.csv\u0026quot;)\nval rowsRDD \u003d linesRDD.map{row \u003d\u0026gt; row.split(\u0026quot;,\u0026quot;)}\n                      .map{cols \u003d\u0026gt; Row(cols(0), cols(1).trim.toInt, cols(2))}\n\nval schema \u003d StructType(List(\n                 StructField(\u0026quot;name\u0026quot;, StringType, false),\n                 StructField(\u0026quot;age\u0026quot;, IntegerType, false),\n                 StructField(\u0026quot;gender\u0026quot;, StringType, false)\n               )\n             )\n\nval employeesDF \u003d sqlContext.createDataFrame(rowsRDD,schema)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003ec) Creating a DataFrame from a Data Source\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eSpark SQL provides a unified interface for creating a DataFrame from a variety of data sources.\u003c/p\u003e\n\u003cp\u003eAPI can be used to create a DataFrame from a MySQL, PostgreSQL, Oracle, or Cassandra table.\u003c/p\u003e\n\u003cp\u003ethe same API can be used to create a DataFrame from a Parquet, JSON, ORC or CSV file on local file system, HDFS or S3\u003c/p\u003e\n\u003cp\u003eSpark SQL has built-in support for some of the commonly used data sources\u003c/p\u003e\n\u003cp\u003eIncludes Parquet, JSON, Hive, and JDBC-compliant databases\u003c/p\u003e\n\u003cp\u003eExternal packages are available for other data sources\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eimport org.apache.spark._\nimport org.apache.spark.sql._\n\nval config \u003d new SparkConf().setAppName(\u0026quot;My Spark SQL app\u0026quot;)\nval sc \u003d new SparkContext(config)\nval sqlContext \u003d new org.apache.spark.sql.hive.HiveContext (sc)\n\n// create a DataFrame from parquet files\nval parquetDF \u003d sqlContext.read\n                          .format(\u0026quot;org.apache.spark.sql.parquet\u0026quot;)\n                          .load(\u0026quot;path/to/Parquet-file-or-directory\u0026quot;)\n\n// create a DataFrame from JSON files\nval jsonDF \u003d sqlContext.read\n                       .format(\u0026quot;org.apache.spark.sql.json\u0026quot;)\n                       .load(\u0026quot;path/to/JSON-file-or-directory\u0026quot;)\n\n// create a DataFrame from a table in a Postgres database\nval jdbcDF \u003d sqlContext.read\n               .format(\u0026quot;org.apache.spark.sql.jdbc\u0026quot;)\n               .options(Map(\n                  \u0026quot;url\u0026quot; -\u0026gt; \u0026quot;jdbc:postgresql://host:port/database?user\u003d\u0026lt;USER\u0026gt;\u0026amp;password\u003d\u0026lt;PASS\u0026gt;\u0026quot;,\n                  \u0026quot;dbtable\u0026quot; -\u0026gt; \u0026quot;schema-name.table-name\u0026quot;))\n               .load()\n\n// create a DataFrame from a Hive table\nval hiveDF \u003d sqlContext.read\n                       .table(\u0026quot;hive-table-name\u0026quot;)\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488325207232_-997820417",
+      "id": "20170301-004007_185660401",
+      "dateCreated": "Mar 1, 2017 12:40:07 AM",
+      "dateStarted": "Mar 1, 2017 12:50:52 AM",
+      "dateFinished": "Mar 1, 2017 12:50:52 AM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n",
       "user": "anonymous",
-      "dateUpdated": "Feb 28, 2017 10:53:24 PM",
+      "dateUpdated": "Mar 1, 2017 12:46:50 AM",
       "config": {},
       "settings": {
         "params": {},
         "forms": {}
       },
       "apps": [],
-      "jobName": "paragraph_1488318804163_-1162528226",
-      "id": "20170228-225324_353156368",
-      "dateCreated": "Feb 28, 2017 10:53:24 PM",
+      "jobName": "paragraph_1488325610148_-2044538284",
+      "id": "20170301-004650_654668507",
+      "dateCreated": "Mar 1, 2017 12:46:50 AM",
       "status": "READY",
       "progressUpdateIntervalMs": 500
     }
