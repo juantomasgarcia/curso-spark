@@ -77,7 +77,7 @@
     {
       "text": "%md\n\nUSA Flights 2008 \n\nhttp://stat-computing.org/dataexpo/2009/2008.csv.bz2\n\n\n",
       "user": "anonymous",
-      "dateUpdated": "Feb 28, 2017 10:13:18 PM",
+      "dateUpdated": "Feb 28, 2017 10:22:31 PM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
@@ -87,8 +87,8 @@
           "editOnDblClick": true
         },
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
-        "tableHide": false
+        "editorHide": false,
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -113,9 +113,47 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "val baby_names \u003d sqlContext.read.format(\"com.databricks.spark.csv\").option(\"header\", \"true\").option(\"inferSchema\", \"true\").load(\"baby_names.csv\")\n",
+      "text": "%md\n\n* Step by Step *: we will start just loading a csv file.",
       "user": "anonymous",
-      "dateUpdated": "Feb 28, 2017 8:25:38 PM",
+      "dateUpdated": "Feb 28, 2017 10:23:44 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n  \u003cli\u003eStep by Step *: we will start just loading a csv file.\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488316958112_1774440206",
+      "id": "20170228-222238_268250743",
+      "dateCreated": "Feb 28, 2017 10:22:38 PM",
+      "dateStarted": "Feb 28, 2017 10:23:44 PM",
+      "dateFinished": "Feb 28, 2017 10:23:44 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val localPath\u003d\"/Users/juantomas/proyectos/cursos/curso-spark/datasets/\"\nval airports \u003d sqlContext.read.format(\"com.databricks.spark.csv\")\n    .option(\"header\", \"true\")\n    .option(\"inferSchema\", \"true\")\n    .load(localPath+\"airports.csv\")\n",
+      "user": "anonymous",
+      "dateUpdated": "Feb 28, 2017 10:24:18 PM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
@@ -130,11 +168,11 @@
         "forms": {}
       },
       "results": {
-        "code": "ERROR",
+        "code": "SUCCESS",
         "msg": [
           {
             "type": "TEXT",
-            "data": "\n\n\n\n\n\n\n\n\n\n\n\norg.apache.spark.sql.AnalysisException: Path does not exist: file:/Users/juantomas/Downloads/zeppelin-0.7.0-bin-all/baby_names.csv;\n  at org.apache.spark.sql.execution.datasources.DataSource$$anonfun$14.apply(DataSource.scala:382)\n  at org.apache.spark.sql.execution.datasources.DataSource$$anonfun$14.apply(DataSource.scala:370)\n  at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)\n  at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)\n  at scala.collection.immutable.List.foreach(List.scala:381)\n  at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:241)\n  at scala.collection.immutable.List.flatMap(List.scala:344)\n  at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:370)\n  at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:152)\n  at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:135)\n  ... 47 elided\n"
+            "data": "\nlocalPath: String \u003d /Users/juantomas/proyectos/cursos/curso-spark/datasets/\n\nairports: org.apache.spark.sql.DataFrame \u003d [iata: string, airport: string ... 5 more fields]\n"
           }
         ]
       },
@@ -142,9 +180,171 @@
       "jobName": "paragraph_1488309788667_679951132",
       "id": "20170228-202308_1487435516",
       "dateCreated": "Feb 28, 2017 8:23:08 PM",
-      "dateStarted": "Feb 28, 2017 8:24:41 PM",
-      "dateFinished": "Feb 28, 2017 8:25:48 PM",
-      "status": "ERROR",
+      "dateStarted": "Feb 28, 2017 10:24:19 PM",
+      "dateFinished": "Feb 28, 2017 10:24:22 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\nWe just create a DataFrame reading the file \nThe schema of the Dataframe is: \n",
+      "user": "anonymous",
+      "dateUpdated": "Feb 28, 2017 10:28:51 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eWe just create a DataFrame reading the file\u003cbr/\u003eThe schema of the Dataframe is:\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488317237175_1793291258",
+      "id": "20170228-222717_1840369942",
+      "dateCreated": "Feb 28, 2017 10:27:17 PM",
+      "dateStarted": "Feb 28, 2017 10:28:51 PM",
+      "dateFinished": "Feb 28, 2017 10:28:51 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark\nairports.printSchema\n",
+      "user": "anonymous",
+      "dateUpdated": "Feb 28, 2017 10:26:27 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- iata: string (nullable \u003d true)\n |-- airport: string (nullable \u003d true)\n |-- city: string (nullable \u003d true)\n |-- state: string (nullable \u003d true)\n |-- country: string (nullable \u003d true)\n |-- lat: double (nullable \u003d true)\n |-- long: double (nullable \u003d true)\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488317095679_-1440385330",
+      "id": "20170228-222455_1852965182",
+      "dateCreated": "Feb 28, 2017 10:24:55 PM",
+      "dateStarted": "Feb 28, 2017 10:26:28 PM",
+      "dateFinished": "Feb 28, 2017 10:26:29 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\nThe contents of the dataframe airports is: \n\n",
+      "user": "anonymous",
+      "dateUpdated": "Feb 28, 2017 10:29:48 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eThe contents of the dataframe airports is:\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488317225593_2090286760",
+      "id": "20170228-222705_478435638",
+      "dateCreated": "Feb 28, 2017 10:27:05 PM",
+      "dateStarted": "Feb 28, 2017 10:29:48 PM",
+      "dateFinished": "Feb 28, 2017 10:29:48 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark\n\nairports.show(10)",
+      "user": "anonymous",
+      "dateUpdated": "Feb 28, 2017 10:29:54 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+--------------------+----------------+-----+-------+-----------+------------+\n|iata|             airport|            city|state|country|        lat|        long|\n+----+--------------------+----------------+-----+-------+-----------+------------+\n| 00M|            Thigpen |     Bay Springs|   MS|    USA|31.95376472|-89.23450472|\n| 00R|Livingston Municipal|      Livingston|   TX|    USA|30.68586111|-95.01792778|\n| 00V|         Meadow Lake|Colorado Springs|   CO|    USA|38.94574889|-104.5698933|\n| 01G|        Perry-Warsaw|           Perry|   NY|    USA|42.74134667|-78.05208056|\n| 01J|    Hilliard Airpark|        Hilliard|   FL|    USA| 30.6880125|-81.90594389|\n| 01M|   Tishomingo County|         Belmont|   MS|    USA|34.49166667|-88.20111111|\n| 02A|         Gragg-Wade |         Clanton|   AL|    USA|32.85048667|-86.61145333|\n| 02C|             Capitol|      Brookfield|   WI|    USA|   43.08751|-88.17786917|\n| 02G|   Columbiana County|  East Liverpool|   OH|    USA|40.67331278|-80.64140639|\n| 03D|    Memphis Memorial|         Memphis|   MO|    USA|40.44725889|-92.22696056|\n+----+--------------------+----------------+-----+-------+-----------+------------+\nonly showing top 10 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488316843497_847394571",
+      "id": "20170228-222043_2046966645",
+      "dateCreated": "Feb 28, 2017 10:20:43 PM",
+      "dateStarted": "Feb 28, 2017 10:29:54 PM",
+      "dateFinished": "Feb 28, 2017 10:29:57 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark\n",
+      "user": "anonymous",
+      "dateUpdated": "Feb 28, 2017 10:26:07 PM",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1488317167429_-1582434295",
+      "id": "20170228-222607_1793357259",
+      "dateCreated": "Feb 28, 2017 10:26:07 PM",
+      "status": "READY",
       "progressUpdateIntervalMs": 500
     }
   ],
