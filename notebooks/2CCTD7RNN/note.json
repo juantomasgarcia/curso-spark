@@ -39,6 +39,42 @@
       "progressUpdateIntervalMs": 500
     },
     {
+      "text": "%spark \nprintln(sc.version)\n",
+      "user": "anonymous",
+      "dateUpdated": "Mar 1, 2017 10:41:39 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "2.1.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1488361279208_1039337105",
+      "id": "20170301-104119_326642504",
+      "dateCreated": "Mar 1, 2017 10:41:19 AM",
+      "dateStarted": "Mar 1, 2017 10:41:39 AM",
+      "dateFinished": "Mar 1, 2017 10:41:42 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
       "text": "%sh \nls -lt /Users/juantomas/proyectos/cursos/curso-spark/datasets\n\n",
       "user": "anonymous",
       "dateUpdated": "Mar 1, 2017 9:38:56 AM",
@@ -75,9 +111,9 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%md\n\nUSA Flights 2008 \n\nhttp://stat-computing.org/dataexpo/2009/2008.csv.bz2\n\n\n",
+      "text": "%md\n\n**USA Flights 2008**\n\nhttp://stat-computing.org/dataexpo/2009/2008.csv.bz2\n\n**Github**\n\nhttps://github.com/juantomasgarcia/curso-spark\n\n",
       "user": "anonymous",
-      "dateUpdated": "Feb 28, 2017 10:22:31 PM",
+      "dateUpdated": "Mar 1, 2017 9:54:15 AM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
@@ -87,8 +123,8 @@
           "editOnDblClick": true
         },
         "editorMode": "ace/mode/markdown",
-        "editorHide": false,
-        "tableHide": true
+        "editorHide": true,
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -99,7 +135,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eUSA Flights 2008 \u003c/p\u003e\n\u003cp\u003e\u003ca href\u003d\"http://stat-computing.org/dataexpo/2009/2008.csv.bz2\"\u003ehttp://stat-computing.org/dataexpo/2009/2008.csv.bz2\u003c/a\u003e\u003c/p\u003e\n\u003c/div\u003e"
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eUSA Flights 2008\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href\u003d\"http://stat-computing.org/dataexpo/2009/2008.csv.bz2\"\u003ehttp://stat-computing.org/dataexpo/2009/2008.csv.bz2\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eGithub\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href\u003d\"https://github.com/juantomasgarcia/curso-spark\"\u003ehttps://github.com/juantomasgarcia/curso-spark\u003c/a\u003e\u003c/p\u003e\n\u003c/div\u003e"
           }
         ]
       },
@@ -107,15 +143,15 @@
       "jobName": "paragraph_1488316346559_615287004",
       "id": "20170228-221226_181477098",
       "dateCreated": "Feb 28, 2017 10:12:26 PM",
-      "dateStarted": "Feb 28, 2017 10:13:18 PM",
-      "dateFinished": "Feb 28, 2017 10:13:22 PM",
+      "dateStarted": "Mar 1, 2017 9:54:15 AM",
+      "dateFinished": "Mar 1, 2017 9:54:15 AM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n\nFirst Example (for the impacients)\n---\n\n**Step by Step**: we will start just loading a csv file.",
       "user": "anonymous",
-      "dateUpdated": "Feb 28, 2017 11:30:42 PM",
+      "dateUpdated": "Mar 1, 2017 10:09:00 AM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
@@ -125,8 +161,8 @@
           "editOnDblClick": true
         },
         "editorMode": "ace/mode/markdown",
-        "editorHide": false,
-        "tableHide": true
+        "editorHide": true,
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -137,7 +173,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eFirst Example\u003c/h2\u003e\n\u003cp\u003e\u003cstrong\u003eStep by Step\u003c/strong\u003e: we will start just loading a csv file.\u003c/p\u003e\n\u003c/div\u003e"
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eFirst Example (for the impacients)\u003c/h2\u003e\n\u003cp\u003e\u003cstrong\u003eStep by Step\u003c/strong\u003e: we will start just loading a csv file.\u003c/p\u003e\n\u003c/div\u003e"
           }
         ]
       },
@@ -145,15 +181,15 @@
       "jobName": "paragraph_1488316958112_1774440206",
       "id": "20170228-222238_268250743",
       "dateCreated": "Feb 28, 2017 10:22:38 PM",
-      "dateStarted": "Feb 28, 2017 10:35:52 PM",
-      "dateFinished": "Feb 28, 2017 10:35:52 PM",
+      "dateStarted": "Mar 1, 2017 10:09:00 AM",
+      "dateFinished": "Mar 1, 2017 10:09:00 AM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "val localPath\u003d\"/Users/juantomas/proyectos/cursos/curso-spark/datasets/\"\nval airports \u003d sqlContext.read.format(\"com.databricks.spark.csv\")\n    .option(\"header\", \"true\")\n    .option(\"inferSchema\", \"true\")\n    .load(localPath+\"airports.csv\")\n",
       "user": "anonymous",
-      "dateUpdated": "Feb 28, 2017 10:24:18 PM",
+      "dateUpdated": "Mar 1, 2017 10:32:19 AM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
@@ -161,7 +197,8 @@
         "editorSetting": {
           "language": "scala"
         },
-        "editorMode": "ace/mode/scala"
+        "editorMode": "ace/mode/scala",
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -450,7 +487,7 @@
     {
       "text": "%md\nThat\u0027s the global view of spark \u0026 spark SQL \n---\n\n![alternate text](https://www.safaribooksonline.com/library/view/big-data-analytics/9781484209646/images/9781484209653_Fig07-01.jpg)\n\n",
       "user": "anonymous",
-      "dateUpdated": "Mar 1, 2017 9:39:25 AM",
+      "dateUpdated": "Mar 2, 2017 6:18:13 AM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
@@ -460,8 +497,8 @@
           "editOnDblClick": true
         },
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
-        "tableHide": false
+        "editorHide": false,
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -675,12 +712,18 @@
     {
       "text": "%md\n\nDiffs between RDDs \u0026 Dataframes\n---\n\n* DataFrame is schema aware\n* RDD is a partitioned collection of opaque elements\n* DataFrame knows the names and types of the columns in a dataset\n* DataFrame class is able to provide a rich domain-specific-language (DSL) for data processing\n* DataFrame API is easier to understand and use than the RDD API\n* DataFrame can also be operated on as an RDD\n* RDD can be easily created from a DataFrame\n* DataFrame can be registered as a temporary table\n\n\n",
       "user": "anonymous",
-      "dateUpdated": "Mar 1, 2017 12:37:22 AM",
+      "dateUpdated": "Mar 1, 2017 11:56:01 AM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
         "results": {},
-        "editorSetting": {}
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -699,23 +742,26 @@
       "jobName": "paragraph_1488324777727_-1194054392",
       "id": "20170301-003257_151015170",
       "dateCreated": "Mar 1, 2017 12:32:57 AM",
-      "dateStarted": "Mar 1, 2017 12:37:23 AM",
-      "dateFinished": "Mar 1, 2017 12:37:23 AM",
+      "dateStarted": "Mar 1, 2017 11:56:01 AM",
+      "dateFinished": "Mar 1, 2017 11:56:01 AM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n\nRow\n---\n\nRow is a Spark SQL abstraction for representing a row of data\n\nit is equivalent to a relational tuple or row in a table\n\nYou can create a Row this way: \n\n~~~\nimport org.apache.spark.sql._\n\nval row1 \u003d Row(\"Barack Obama\", \"President\", \"United States\")\nval row2 \u003d Row(\"David Cameron\", \"Prime Minister\", \"United Kingdom\")\n~~~\n\nand you can use this rows at low level: \n\n~~~\nval presidentName \u003d row1.getString(0)\nval country \u003d row1.getString(2)\n~~~",
       "user": "anonymous",
-      "dateUpdated": "Mar 1, 2017 12:40:07 AM",
+      "dateUpdated": "Mar 1, 2017 12:02:05 PM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
-          "language": "scala"
+          "language": "markdown",
+          "editOnDblClick": true
         },
-        "editorMode": "ace/mode/scala"
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -734,8 +780,8 @@
       "jobName": "paragraph_1488325042529_1230631532",
       "id": "20170301-003722_1470503227",
       "dateCreated": "Mar 1, 2017 12:37:22 AM",
-      "dateStarted": "Mar 1, 2017 12:40:07 AM",
-      "dateFinished": "Mar 1, 2017 12:40:07 AM",
+      "dateStarted": "Mar 1, 2017 12:02:05 PM",
+      "dateFinished": "Mar 1, 2017 12:02:05 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
@@ -780,15 +826,18 @@
     {
       "text": "%md\n\nSome examples reading from different sources \n---\n\n**JSON**\n\n~~~\nval jsonDF \u003d sqlContext.read.json(\"path/to/JSON-file-or-directory\")\nval jsonHdfsDF \u003d sqlContext.read.json(\"hdfs://NAME_NODE/path/to/data.json\")\nval jsonS3DF \u003d sqlContext.read.json(\"s3a://BUCKET_NAME/FOLDER_NAME/data.json\")\n~~~\nPassing the schema to dataframe reader: \n~~~\nimport org.apache.spark.sql.types._\n\nval userSchema \u003d StructType(List(\n                     StructField(\"name\", StringType, false),\n                     StructField(\"age\", IntegerType, false),\n                     StructField(\"gender\", StringType, false)\n                     )\n                   )\n\nval userDF \u003d sqlContext.read\n                       .schema(userSchema)\n                       .json(\"path/to/user.json\")\n~~~\n\n",
       "user": "anonymous",
-      "dateUpdated": "Mar 1, 2017 12:54:41 AM",
+      "dateUpdated": "Mar 1, 2017 12:15:51 PM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
-          "language": "scala"
+          "language": "markdown",
+          "editOnDblClick": true
         },
-        "editorMode": "ace/mode/scala"
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -807,8 +856,8 @@
       "jobName": "paragraph_1488325610148_-2044538284",
       "id": "20170301-004650_654668507",
       "dateCreated": "Mar 1, 2017 12:46:50 AM",
-      "dateStarted": "Mar 1, 2017 12:54:43 AM",
-      "dateFinished": "Mar 1, 2017 12:54:43 AM",
+      "dateStarted": "Mar 1, 2017 12:15:51 PM",
+      "dateFinished": "Mar 1, 2017 12:15:51 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
@@ -889,15 +938,18 @@
     {
       "text": "%md\nLanguage-Integrated Query Methods\n---\n\n**agg**\n\nThe agg method performs specified aggregations on one or more columns in the source DataFrame and returns the result as a new DataFrame.\n~~~\nval aggregates \u003d productDF.agg(max(\"price\"), min(\"price\"), count(\"name\"))\n\naggregates: org.apache.spark.sql.DataFrame \u003d [max(price): double, min(price): double, count(name): bigint]\n\naggregates.show\n+----------+----------+-----------+\n|max(price)|min(price)|count(name)|\n+----------+----------+-----------+\n|    1200.0|     200.0|          6|\n+----------+----------+-----------+\n~~~\nLet’s discuss the show method in a little bit. Essentially, it displays the content of a DataFrame on the console.\n\n**apply**\n\nThe apply method takes the name of a column as an argument and returns the specified column in the source DataFrame as an instance of the Column class. The Column class provides operators for manipulating a column in a DataFrame.\n~~~\nval priceColumn \u003d productDF.apply(\"price\")\n\npriceColumn: org.apache.spark.sql.Column \u003d price\n\nval discountedPriceColumn \u003d priceColumn * 0.5\n\ndiscountedPriceColumn: org.apache.spark.sql.Column \u003d (price * 0.5)\n~~~~\n\nScala provides syntactic sugar that allows you to use productDF(\"price\") instead of productDF.apply(\"price\"). It automatically converts productDF(\"price\") to productDF.apply(\"price\"). So the preceding code can be rewritten, as shown next.\n\n~~~\nval priceColumn \u003d productDF(\"price\")\nval discountedPriceColumn \u003d priceColumn * 0.5\n~~~~\n\nAn instance of the Column class is generally used as an input to some of the DataFrame methods or functions defined in the Spark SQL library. Let’s revisit one of the examples discussed earlier.\n~~~\nval aggregates \u003d productDF.agg(max(\"price\"), min(\"price\"), count(\"name\"))\n~~~\nIt is a concise version of the statement shown next.\n~~~\nval aggregates \u003d productDF.agg(max(productDF(\"price\")), min(productDF(\"price\")),\n                               count(productDF(\"name\")))\n~~~\nThe expression productDF(\"price\") can also be written as $\"price\" for convenience. Thus, the following two expressions are equivalent.\n~~~\nval aggregates \u003d productDF.agg(max($\"price\"), min($\"price\"), count($\"name\"))\nval aggregates \u003d productDF.agg(max(productDF(\"price\")), min(productDF(\"price\")),\n                               count(productDF(\"name\")))\n~~~\nIf a method or function expects an instance of the Column class as an argument, you can use the $\"...\" notation to select a column in a DataFrame.\n\nIn summary, the following three statements are equivalent.\n~~~\nval aggregates \u003d productDF.agg(max(productDF(\"price\")), min(productDF(\"price\")),\n                               count(productDF(\"name\")))\nval aggregates \u003d productDF.agg(max(\"price\"), min(\"price\"), count(\"name\"))\nval aggregates \u003d productDF.agg(max($\"price\"), min($\"price\"), count($\"name\"))\n~~~\n**cube**\n\nThe cube method takes the names of one or more columns as arguments and returns a cube for multi-dimensional analysis. It is useful for generating cross-tabular reports.\n\nAssume you have a dataset that tracks sales along three dimensions: time, product and country. The cube method allows you to generate aggregates for all the possible combinations of the dimensions that you are interested in.\n~~~\ncase class SalesSummary(date: String, product: String, country: String, revenue: Double)\nval sales \u003d List(SalesSummary(\"01/01/2015\", \"iPhone\", \"USA\", 40000),\n                 SalesSummary(\"01/02/2015\", \"iPhone\", \"USA\", 30000),\n                 SalesSummary(\"01/01/2015\", \"iPhone\", \"China\", 10000),\n                 SalesSummary(\"01/02/2015\", \"iPhone\", \"China\", 5000),\n                 SalesSummary(\"01/01/2015\", \"S6\", \"USA\", 20000),\n                 SalesSummary(\"01/02/2015\", \"S6\", \"USA\", 10000),\n                 SalesSummary(\"01/01/2015\", \"S6\", \"China\", 9000),\n                 SalesSummary(\"01/02/2015\", \"S6\", \"China\", 6000))\n\nval salesDF \u003d sc.parallelize(sales).toDF()\n\nval salesCubeDF \u003d salesDF.cube($\"date\", $\"product\", $\"country\").sum(\"revenue\")\n\nsalesCubeDF: org.apache.spark.sql.DataFrame \u003d [date: string, product: string, country: string, sum(revenue): double]\n\nsalesCubeDF.withColumnRenamed(\"sum(revenue)\", \"total\").show(30)\n~~~\n+----------+-------+-------+--------+\n|      date|product|country|   total|\n+----------+-------+-------+--------+\n|01/01/2015|   null|    USA| 60000.0|\n|01/02/2015|     S6|   null| 16000.0|\n|01/01/2015| iPhone|   null| 50000.0|\n|01/01/2015|     S6|  China|  9000.0|\n|      null|   null|  China| 30000.0|\n|01/02/2015|     S6|    USA| 10000.0|\n|01/02/2015|   null|   null| 51000.0|\n|01/02/2015| iPhone|  China|  5000.0|\n|01/01/2015| iPhone|    USA| 40000.0|\n|01/01/2015|   null|  China| 19000.0|\n|01/02/2015|   null|    USA| 40000.0|\n|      null| iPhone|  China| 15000.0|\n|01/02/2015|     S6|  China|  6000.0|\n|01/01/2015| iPhone|  China| 10000.0|\n|01/02/2015|   null|  China| 11000.0|\n|      null| iPhone|   null| 85000.0|\n|      null| iPhone|    USA| 70000.0|\n|      null|     S6|   null| 45000.0|\n|      null|     S6|    USA| 30000.0|\n|01/01/2015|     S6|   null| 29000.0|\n|      null|   null|   null|130000.0|\n|01/02/2015| iPhone|   null| 35000.0|\n|01/01/2015|     S6|    USA| 20000.0|\n|      null|   null|    USA|100000.0|\n|01/01/2015|   null|   null| 79000.0|\n|      null|     S6|  China| 15000.0|\n|01/02/2015| iPhone|    USA| 30000.0|\n+----------+-------+-------+--------+\n\nIf you wanted to find the total sales of all products in the USA, you can use the following expression.\n~~~\nsalesCubeDF.filter(\"product IS null AND date IS null AND country\u003d\u0027USA\u0027\").show\n~~~\n+----+-------+-------+------------+\n|date|product|country|sum(revenue)|\n+----+-------+-------+------------+\n|null|   null|    USA|    100000.0|\n+----+-------+-------+------------+\n\nIf you wanted to know the subtotal of sales by product in the USA, you can use the following expression.\n~~~\nsalesCubeDF.filter(\"date IS null AND product IS NOT null AND country\u003d\u0027USA\u0027\").show\n~~~\n+----+-------+-------+------------+\n|date|product|country|sum(revenue)|\n+----+-------+-------+------------+\n|null| iPhone|    USA|     70000.0|\n|null|     S6|    USA|     30000.0|\n+----+-------+-------+------------+\n\n**distinct**\n\nThe distinct method returns a new DataFrame containing only the unique rows in the source DataFrame.\n~~~\nval dfWithoutDuplicates \u003d customerDF.distinct\n~~~\n**explode**\n\nThe explode method generates zero or more rows from a column using a user-provided function. It takes three arguments. The first argument is the input column, the second argument is the output column and the third argument is a user provided function that generates one or more values for the output column for each value in the input column.\n\nFor example, consider a dataset that has a text column containing contents of an email. Let’s assume that you want to split the email content into individual words and you want a row for each word in an email.\n~~~\ncase class Email(sender: String, recepient: String, subject: String, body: String)\nval emails \u003d List(Email(\"James\", \"Mary\", \"back\", \"just got back from vacation\"),\n                  Email(\"John\", \"Jessica\", \"money\", \"make million dollars\"),\n                  Email(\"Tim\", \"Kevin\", \"report\", \"send me sales report ASAP\"))\n\nval emailDF \u003d sc.parallelize(emails).toDF()\nval wordDF \u003d emailDF.explode(\"body\", \"word\") { body: String \u003d\u003e body.split(\" \")}\nwordDF.show\n\n+------+---------+-------+--------------------+--------+\n|sender|recepient|subject|                body|    word|\n+------+---------+-------+--------------------+--------+\n| James|     Mary|   back|just got back fro...|    just|\n| James|     Mary|   back|just got back fro...|     got|\n| James|     Mary|   back|just got back fro...|    back|\n| James|     Mary|   back|just got back fro...|    from|\n| James|     Mary|   back|just got back fro...|vacation|\n|  John|  Jessica|  money|make million dollars|    make|\n|  John|  Jessica|  money|make million dollars| million|\n|  John|  Jessica|  money|make million dollars| dollars|\n|   Tim|    Kevin| report|send me sales rep...|    send|\n|   Tim|    Kevin| report|send me sales rep...|      me|\n|   Tim|    Kevin| report|send me sales rep...|   sales|\n|   Tim|    Kevin| report|send me sales rep...|  report|\n|   Tim|    Kevin| report|send me sales rep...|    ASAP|\n+------+---------+-------+--------------------+--------+\n~~~\n**filter**\n\nThe filter method filters rows in the source DataFrame using a SQL expression provided to it as an argument. It returns a new DataFrame containing only the filtered rows. The SQL expression can be passed as a string argument.\n~~~\nval filteredDF \u003d customerDF.filter(\"age \u003e 25\")\n\nfilteredDF: org.apache.spark.sql.DataFrame \u003d [cId: bigint, name: string, age: int, gender: string]\n\nfilteredDF.show\n\n+---+--------+---+------+\n|cId|    name|age|gender|\n+---+--------+---+------+\n|  3|    John| 31|     M|\n|  4|Jennifer| 45|     F|\n|  5|  Robert| 41|     M|\n|  6|  Sandra| 45|     F|\n+---+--------+---+------+\n~~~\n\nA variant of the filter method allows a filter condition to be specified using the Column type.\n~~~\nval filteredDF \u003d customerDF.filter($\"age\" \u003e 25)\n~~~\nAs mentioned earlier, the preceding code is a short-hand for the following code.\n~~~\nval filteredDF \u003d customerDF.filter(customerDF(\"age\") \u003e 25)\n~~~\n**groupBy**\n\nThe groupBy method groups the rows in the source DataFrame using the columns provided to it as arguments. Aggregation can be performed on the grouped data returned by this method.\n~~~\nval countByGender \u003d customerDF.groupBy(\"gender\").count\n\ncountByGender: org.apache.spark.sql.DataFrame \u003d [gender: string, count: bigint]\n\ncountByGender.show\n\n+------+-----+\n|gender|count|\n+------+-----+\n|     F|    3|\n|     M|    3|\n+------+-----+\n~~~\n~~~\nval revenueByProductDF \u003d salesDF.groupBy(\"product\").sum(\"revenue\")\n\nrevenueByProductDF: org.apache.spark.sql.DataFrame \u003d [product: string, sum(revenue): double]\n\nrevenueByProductDF.show\n\n+-------+------------+\n|product|sum(revenue)|\n+-------+------------+\n| iPhone|     85000.0|\n|     S6|     45000.0|\n+-------+------------+\n~~~\n**intersect**\n\nThe intersect method takes a DataFrame as an argument and returns a new DataFrame containing only the rows in both the input and source DataFrame.\n~~~\nval customers2 \u003d List(Customer(11, \"Jackson\", 21, \"M\"),\n                     Customer(12, \"Emma\", 25, \"F\"),\n                     Customer(13, \"Olivia\", 31, \"F\"),\n                     Customer(4, \"Jennifer\", 45, \"F\"),\n                     Customer(5, \"Robert\", 41, \"M\"),\n                     Customer(6, \"Sandra\", 45, \"F\"))\n\nval customer2DF \u003d sc.parallelize(customers2).toDF()\nval commonCustomersDF \u003d customerDF.intersect(customer2DF)\ncommonCustomersDF.show\n\n+---+--------+---+------+\n|cId|    name|age|gender|\n+---+--------+---+------+\n|  6|  Sandra| 45|     F|\n|  4|Jennifer| 45|     F|\n|  5|  Robert| 41|     M|\n+---+--------+---+------+\n~~~\n**join**\n\nThe join method performs a SQL join of the source DataFrame with another DataFrame. It takes three arguments, a DataFrame, a join expression and a join type.\n~~~\ncase class Transaction(tId: Long, custId: Long, prodId: Long, date: String, city: String)\nval transactions \u003d List(Transaction(1, 5, 3, \"01/01/2015\", \"San Francisco\"),\n                        Transaction(2, 6, 1, \"01/02/2015\", \"San Jose\"),\n                        Transaction(3, 1, 6, \"01/01/2015\", \"Boston\"),\n                        Transaction(4, 200, 400, \"01/02/2015\", \"Palo Alto\"),\n                        Transaction(6, 100, 100, \"01/02/2015\", \"Mountain View\"))\n\nval transactionDF \u003d sc.parallelize(transactions).toDF()\nval innerDF \u003d transactionDF.join(customerDF, $\"custId\" \u003d\u003d\u003d $\"cId\", \"inner\")\n\ninnerDF.show\n\n+---+------+------+----------+-------------+---+------+---+------+\n|tId|custId|prodId|      date|         city|cId|  name|age|gender|\n+---+------+------+----------+-------------+---+------+---+------+\n|  1|     5|     3|01/01/2015|San Francisco|  5|Robert| 41|     M|\n|  2|     6|     1|01/02/2015|     San Jose|  6|Sandra| 45|     F|\n|  3|     1|     6|01/01/2015|       Boston|  1| James| 21|     M|\n+---+------+------+----------+-------------+---+------+---+------+\n\nval outerDF \u003d transactionDF.join(customerDF, $\"custId\" \u003d\u003d\u003d $\"cId\", \"outer\")\nouterDF.show\n\n+----+------+------+----------+-------------+----+--------+----+------+\n| tId|custId|prodId|      date|         city| cId|    name| age|gender|\n+----+------+------+----------+-------------+----+--------+----+------+\n|   6|   100|   100|01/02/2015|Mountain View|null|    null|null|  null|\n|   4|   200|   400|01/02/2015|    Palo Alto|null|    null|null|  null|\n|   3|     1|     6|01/01/2015|       Boston|   1|   James|  21|     M|\n|null|  null|  null|      null|         null|   2|     Liz|  25|     F|\n|null|  null|  null|      null|         null|   3|    John|  31|     M|\n|null|  null|  null|      null|         null|   4|Jennifer|  45|     F|\n|   1|     5|     3|01/01/2015|San Francisco|   5|  Robert|  41|     M|\n|   2|     6|     1|01/02/2015|     San Jose|   6|  Sandra|  45|     F|\n+----+------+------+----------+-------------+----+--------+----+------+\n\nval leftOuterDF \u003d transactionDF.join(customerDF, $\"custId\" \u003d\u003d\u003d $\"cId\", \"left_outer\")\nleftOuterDF.show\n\n+---+------+------+----------+-------------+----+------+----+------+\n|tId|custId|prodId|      date|         city| cId|  name| age|gender|\n+---+------+------+----------+-------------+----+------+----+------+\n|  1|     5|     3|01/01/2015|San Francisco|   5|Robert|  41|     M|\n|  2|     6|     1|01/02/2015|     San Jose|   6|Sandra|  45|     F|\n|  3|     1|     6|01/01/2015|       Boston|   1| James|  21|     M|\n|  4|   200|   400|01/02/2015|    Palo Alto|null|  null|null|  null|\n|  6|   100|   100|01/02/2015|Mountain View|null|  null|null|  null|\n+---+------+------+----------+-------------+----+------+----+------+\n\nval rightOuterDF \u003d transactionDF.join(customerDF, $\"custId\" \u003d\u003d\u003d $\"cId\", \"right_outer\")\nrightOuterDF.show\n\n+----+------+------+----------+-------------+---+--------+---+------+\n| tId|custId|prodId|      date|         city|cId|    name|age|gender|\n+----+------+------+----------+-------------+---+--------+---+------+\n|   3|     1|     6|01/01/2015|       Boston|  1|   James| 21|     M|\n|null|  null|  null|      null|         null|  2|     Liz| 25|     F|\n|null|  null|  null|      null|         null|  3|    John| 31|     M|\n|null|  null|  null|      null|         null|  4|Jennifer| 45|     F|\n|   1|     5|     3|01/01/2015|San Francisco|  5|  Robert| 41|     M|\n|   2|     6|     1|01/02/2015|     San Jose|  6|  Sandra| 45|     F|\n+----+------+------+----------+-------------+---+--------+---+------+\n~~~\n**limit**\n\nThe limit method returns a DataFrame containing the specified number of rows from the source DataFrame.\n~~~\nval fiveCustomerDF \u003d customerDF.limit(5)\nfiveCustomer.show\n\n+---+--------+---+------+\n|cId|    name|age|gender|\n+---+--------+---+------+\n|  1|   James| 21|     M|\n|  2|     Liz| 25|     F|\n|  3|    John| 31|     M|\n|  4|Jennifer| 45|     F|\n|  5|  Robert| 41|     M|\n+---+--------+---+------+\n~~~\n**orderBy**\n\nThe orderBy method returns a DataFrame sorted by the given columns. It takes the names of one or more columns as arguments.\n~~~\nval sortedDF \u003d customerDF.orderBy(\"name\")\nsortedDF.show\n\n+---+--------+---+------+\n|cId|    name|age|gender|\n+---+--------+---+------+\n|  1|   James| 21|     M|\n|  4|Jennifer| 45|     F|\n|  3|    John| 31|     M|\n|  2|     Liz| 25|     F|\n|  5|  Robert| 41|     M|\n|  6|  Sandra| 45|     F|\n+---+--------+---+------+\n~~~\nBy default, the orderBy method sorts in ascending order. You can explicitly specify the sorting order using a Column expression, as shown next.\n~~~\nval sortedByAgeNameDF \u003d customerDF.sort($\"age\".desc, $\"name\".asc)\nsortedByAgeNameDF.show\n\n+---+--------+---+------+\n|cId|    name|age|gender|\n+---+--------+---+------+\n|  4|Jennifer| 45|     F|\n|  6|  Sandra| 45|     F|\n|  5|  Robert| 41|     M|\n|  3|    John| 31|     M|\n|  2|     Liz| 25|     F|\n|  1|   James| 21|     M|\n+---+--------+---+------+\n~~~\n**randomSplit**\n\nThe randomSplit method splits the source DataFrame into multiple DataFrames. It takes an array of weights as argument and returns an array of DataFrames. It is a useful method for machine learning, where you want to split the raw dataset into training, validation and test datasets.\n~~~\nval dfArray \u003d homeDF.randomSplit(Array(0.6, 0.2, 0.2))\ndfArray(0).count\ndfArray(1).count\ndfArray(2).count\n~~~\n**rollup**\n\nThe rollup method takes the names of one or more columns as arguments and returns a multi-dimensional rollup. It is useful for subaggregation along a hierarchical dimension such as geography or time.\n\nAssume you have a dataset that tracks annual sales by city, state and country. The rollup method can be used to calculate both grand total and subtotals by city, state, and country.\n~~~\ncase class SalesByCity(year: Int, city: String, state: String,\n                       country: String, revenue: Double)\nval salesByCity \u003d List(SalesByCity(2014, \"Boston\", \"MA\", \"USA\", 2000),\n                       SalesByCity(2015, \"Boston\", \"MA\", \"USA\", 3000),\n                       SalesByCity(2014, \"Cambridge\", \"MA\", \"USA\", 2000),\n                       SalesByCity(2015, \"Cambridge\", \"MA\", \"USA\", 3000),\n                       SalesByCity(2014, \"Palo Alto\", \"CA\", \"USA\", 4000),\n                       SalesByCity(2015, \"Palo Alto\", \"CA\", \"USA\", 6000),\n                       SalesByCity(2014, \"Pune\", \"MH\", \"India\", 1000),\n                       SalesByCity(2015, \"Pune\", \"MH\", \"India\", 1000),\n                       SalesByCity(2015, \"Mumbai\", \"MH\", \"India\", 1000),\n                       SalesByCity(2014, \"Mumbai\", \"MH\", \"India\", 2000))\n\nval salesByCityDF \u003d sc.parallelize(salesByCity).toDF()\nval rollup \u003d salesByCityDF.rollup($\"country\", $\"state\", $\"city\").sum(\"revenue\")\nrollup.show\n\n+-------+-----+---------+------------+\n|country|state|     city|sum(revenue)|\n+-------+-----+---------+------------+\n|  India|   MH|   Mumbai|      3000.0|\n|    USA|   MA|Cambridge|      5000.0|\n|  India|   MH|     Pune|      2000.0|\n|    USA|   MA|   Boston|      5000.0|\n|    USA|   MA|     null|     10000.0|\n|    USA| null|     null|     20000.0|\n|    USA|   CA|     null|     10000.0|\n|   null| null|     null|     25000.0|\n|  India|   MH|     null|      5000.0|\n|    USA|   CA|Palo Alto|     10000.0|\n|  India| null|     null|      5000.0|\n+-------+-----+---------+------------+\n~~~\n**sample**\n\nThe sample method returns a DataFrame containing the specified fraction of the rows in the source DataFrame. It takes two arguments. The first argument is a Boolean value indicating whether sampling should be done with replacement. The second argument specifies the fraction of the rows that should be returned.\n~~~\nval sampleDF \u003d homeDF.sample(true, 0.10)\n~~~\n**select**\n\nThe select method returns a DataFrame containing only the specified columns from the source DataFrame.\n~~~\nval namesAgeDF \u003d customerDF.select(\"name\", \"age\")\nnamesAgeDF.show\n\n+--------+---+\n|    name|age|\n+--------+---+\n|   James| 21|\n|     Liz| 25|\n|    John| 31|\n|Jennifer| 45|\n|  Robert| 41|\n|  Sandra| 45|\n+--------+---+\n~~~\nA variant of the select method allows one or more Column expressions as arguments.\n~~~\nval newAgeDF \u003d customerDF.select($\"name\", $\"age\" + 10)\nnewAgeDF.show\n\n+--------+----------+\n|    name|(age + 10)|\n+--------+----------+\n|   James|        31|\n|     Liz|        35|\n|    John|        41|\n|Jennifer|        55|\n|  Robert|        51|\n|  Sandra|        55|\n+--------+----------+\n~~~\n**selectExpr**\n\nThe selectExpr method accepts one or more SQL expressions as arguments and returns a DataFrame generated by executing the specified SQL expressions.\n~~~\nval newCustomerDF \u003d customerDF.selectExpr(\"name\", \"age + 10  AS new_age\",\n                                          \"IF(gender \u003d \u0027M\u0027, true, false) AS male\")\n\nnewCustomerDF.show\n\n+--------+-------+-----+\n|    name|new_age| male|\n+--------+-------+-----+\n|   James|     31| true|\n|     Liz|     35|false|\n|    John|     41| true|\n|Jennifer|     55|false|\n|  Robert|     51| true|\n|  Sandra|     55|false|\n+--------+-------+-----+\n~~~\n**withColumn**\n\nThe withColumn method adds a new column to or replaces an existing column in the source DataFrame and returns a new DataFrame. It takes two arguments. The first argument is the name of the new column and the second argument is an expression for generating the values of the new column.\n~~~\nval newProductDF \u003d productDF.withColumn(\"profit\", $\"price\" - $\"cost\")\nnewProductDF.show\n\n+---+-------+------+-----+------+\n|pId|   name| price| cost|profit|\n+---+-------+------+-----+------+\n|  1| iPhone| 600.0|400.0| 200.0|\n|  2| Galaxy| 500.0|400.0| 100.0|\n|  3|   iPad| 400.0|300.0| 100.0|\n|  4| Kindle| 200.0|100.0| 100.0|\n|  5|MacBook|1200.0|900.0| 300.0|\n|  6|   Dell| 500.0|400.0| 100.0|\n+---+-------+------+-----+------+\n~~~\n\n\n\n\n\n",
       "user": "anonymous",
-      "dateUpdated": "Mar 1, 2017 1:44:20 AM",
+      "dateUpdated": "Mar 1, 2017 12:33:06 PM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
-          "language": "scala"
+          "language": "markdown",
+          "editOnDblClick": true
         },
-        "editorMode": "ace/mode/scala"
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -916,8 +968,8 @@
       "jobName": "paragraph_1488326340874_-654996589",
       "id": "20170301-005900_363428902",
       "dateCreated": "Mar 1, 2017 12:59:00 AM",
-      "dateStarted": "Mar 1, 2017 1:44:21 AM",
-      "dateFinished": "Mar 1, 2017 1:44:21 AM",
+      "dateStarted": "Mar 1, 2017 12:33:06 PM",
+      "dateFinished": "Mar 1, 2017 12:33:07 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
@@ -960,15 +1012,18 @@
     {
       "text": "%md\nOutput Operations\n---\nAn output operation saves a DataFrame to a storage system. Prior to version 1.4, DataFrame included a number of different methods for saving a DataFrame to a variety of storage systems. Starting with version 1.4, those methods were replaced by the write method.\n\n**write**\n\nThe write method returns an instance of the DataFrameWriter class, which provides methods for saving the contents of a DataFrame to a data source. The next section covers the DataFrameWriter class.\n\n**Saving a DataFrame**\n\nSpark SQL provides a unified interface for saving a DataFrame to a variety of data sources. The same interface can be used to write data to relational databases, NoSQL data stores and a variety of file formats.\n\nThe DataFrameWriter class defines the interface for writing data to a data source. Through its builder methods, it allows you to specify different options for saving data. For example, you can specify format, partitioning, and handling of existing data.\n\nThe following examples show how to save a DataFrame to different storage systems.\n~~~\n// save a DataFrame in JSON format\ncustomerDF.write\n  .format(\"org.apache.spark.sql.json\")\n  .save(\"path/to/output-directory\")\n\n// save a DataFrame in Parquet format\nhomeDF.write\n  .format(\"org.apache.spark.sql.parquet\")\n  .partitionBy(\"city\")\n  .save(\"path/to/output-directory\")\n\n// save a DataFrame in ORC file format\nhomeDF.write\n  .format(\"orc\")\n  .partitionBy(\"city\")\n  .save(\"path/to/output-directory\")\n\n// save a DataFrame as a Postgres database table\ndf.write\n  .format(\"org.apache.spark.sql.jdbc\")\n  .options(Map(\n     \"url\" -\u003e \"jdbc:postgresql://host:port/database?user\u003d\u003cUSER\u003e\u0026password\u003d\u003cPASS\u003e\",\n     \"dbtable\" -\u003e \"schema-name.table-name\"))\n   .save()\n\n// save a DataFrame to a Hive table\ndf.write.saveAsTable(\"hive-table-name\")\n~~~\nYou can save a DataFrame in Parquet, JSON, ORC, or CSV format to any Hadoop-supported storage system, including local file system, HDFS or Amazon S3.\n\nIf a data source supports partitioned layout, the DataFrameWriter class supports it through the partitionBy method. It will partition the rows by the specified column and create a separate subdirectory for each unique value in the specified column. Partitioned layout enables partition pruning during query. Future queries through Spark SQL will be able to skip large amounts of disk I/O when a partitioned column is referenced in a predicate.\n\nConsider the following example.\n~~~\nhomeDF.write\n  .format(\"parquet\")\n  .partitionBy(\"city\")\n  .save(\"homes\")\n~~~\nThe preceding code partitions rows by the city column. A subdirectory will be created for each unique value of city. For example, subdirectories named city\u003dBerkeley, city\u003dFremont, city\u003dOakland, and so on, will be created under the homes directory.\n\nThe following code will only read the subdirectory named city\u003dBerkeley and skip all other subdirectories under the homes directory. For a large dataset that includes data for hundreds of cities, this could speed up application performance by orders of magnitude.\n~~~\nval newHomesDF \u003d sqlContext.read.format(\"parquet\").load(\"homes\")\nnewHomesDF.registerTempTable(\"homes\")\nval homesInBerkeley \u003d sqlContext.sql(\"SELECT * FROM homes WHERE city \u003d \u0027Berkeley\u0027\")\n~~~\nWhile saving a DataFrame, if the destination path or table already exists, Spark SQL will throw an exception by default. You can change this behavior by calling the mode method in the DataFrameWriter class. It takes an argument, which specifies the behavior if destination path or table already exists. The mode method supports the following options:\n~~~\n    error (default) - throw an exception if destination path/table already exists.\n    append - append to existing data if destination path/table already exists.\n    overwrite - overwrite existing data if destination path/table exists.\n    ignore - ignore the operation if destination path/table exists.\n~~~\nA few examples are shown next.\n~~~\ncustomerDF.write\n  .format(\"parquet\")\n  .mode(\"overwrite\")\n  .save(\"path/to/output-directory\")\n\ncustomerDF.write\n  .mode(\"append\")\n  .saveAsTable(\"hive-table-name\")\n~~~\nIn addition to the methods shown here for writing data to a data source, the DataFrameWriter class provides special methods for writing data to the data sources for which it has built-in support for. These data sources include Parquet, ORC, JSON, Hive, and JDBC-compliant databases.\n\n**JSON**\n\nThe json method saves the contents of a DataFrame in JSON format. It takes as argument a path, which can be on a local file system, HDFS or S3.\n~~~\ncustomerDF.write.json(\"path/to/directory\")\n~~~\n**Parquet**\n\nThe parquet method saves the contents of a DataFrame in Parquet format. It takes a path as argument and saves a DataFrame at the specified path.\n~~~\ncustomerDF.write.parquet(\"path/to/directory\")\n~~~\n**ORC**\n\nThe orc method saves a DataFrame in ORC file format. Similar to the JSON and Parquet methods, it takes a path as argument.\n~~~\ncustomerDF.write.orc(\"path/to/directory\")\n~~~\n**Hive**\n\nThe saveAsTable method saves the content of a DataFrame as a Hive table. It saves a DataFrame to a file and registers metadata as a table in Hive metastore.\n~~~\ncustomerDF.write.saveAsTable(\"hive-table-name\")\n~~~\n**JDBC-Compliant Database**\n\nThe jdbc method saves a DataFrame to a database using the JDBC interface. It takes three arguments: JDBC URL of a database, table name, and connection properties. The connection properties specify connection arguments such as user name and password.\n~~~\nval jdbcUrl \u003d\"jdbc:mysql://host:port/database\"\nval tableName \u003d \"table-name\"\nval connectionProperties \u003d new java.util.Properties\nconnectionProperties.setProperty(\"user\",\"database-user-name\")\nconnectionProperties.setProperty(\"password\",\" database-user-password\")\n\ncustomerDF.write.jdbc(jdbcUrl, tableName, connectionProperties)\n\n~~~",
       "user": "anonymous",
-      "dateUpdated": "Mar 1, 2017 2:11:23 AM",
+      "dateUpdated": "Mar 1, 2017 1:25:24 PM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
-          "language": "scala"
+          "language": "markdown",
+          "editOnDblClick": true
         },
-        "editorMode": "ace/mode/scala"
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -987,8 +1042,8 @@
       "jobName": "paragraph_1488330100561_723753525",
       "id": "20170301-020140_719756754",
       "dateCreated": "Mar 1, 2017 2:01:40 AM",
-      "dateStarted": "Mar 1, 2017 2:11:23 AM",
-      "dateFinished": "Mar 1, 2017 2:11:24 AM",
+      "dateStarted": "Mar 1, 2017 1:25:24 PM",
+      "dateFinished": "Mar 1, 2017 1:25:24 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
